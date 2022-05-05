@@ -615,7 +615,7 @@ st.write("**The model:**", page, abstract_description, unsafe_allow_html=True)
 
 st.write(custom_css, unsafe_allow_html=True)
 
-submit = st.button("Generate your piece!")
+submit = st.button("生成你的作品!")
 
 
 def run_internal(args, status, stoutput, gray_during_execution):
