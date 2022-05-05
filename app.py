@@ -601,15 +601,14 @@ with gensettings:
 
 if page == "MultureLabModel1":
     if sub_model == "MultureLabModelBeta1":
-        sub_model_link = f'<a href="https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb" target="_blank">{sub_model}</a>'
+        sub_model_link = f'{sub_model}'
     abstract_description = f"usually described as **Coherent** and **Structured**, it can compose images with high quality results. The selected implementation is {sub_model_link}"
-elif page == "MultureLabModel2":
     if sub_model == "MultureLabModelBeta2":
-        sub_model_link = f'<a href="https://colab.research.google.com/drive/1N4UNSbtNMd31N_gAT9rAm8ZzPh62Y5ud" target="_blank">{sub_model}</a>'
+        sub_model_link = f'{sub_model}'
     abstract_description = f"usually described as **Artistic** or **Creative**, it can compose images that are perceived as more artistic. The selected implementation is {sub_model_link}"
 elif page == "MultureLabModel3":
     if sub_model == "MultureLabModelBeta3":
-        sub_model_link = f'<a href="https://github.com/Jack000/glid-3-xl" target="_blank">{sub_model}</div>'
+        sub_model_link = f'{sub_model}'
     abstract_description = f"Latest avaliable model, really good results with text synthesis and fast outputs. The selected implementation is {sub_model_link}"
 
 st.write("**The model:**", page, abstract_description, unsafe_allow_html=True)
@@ -850,15 +849,15 @@ with col_output2:
                         file_list.append(file)
             else:
                 file_list = files[0]
-            gallery_text_area.write("Welcome back! Your last creation:")
+            gallery_text_area.write("欢迎回来! 你最后的创作:")
             gallery_image_area.image(file_list)
             st.write(
-                f'<div class="bottom-line"><div class="row-widget stButton"><a kind="primary" class="css-1q8dd3e edgvbvh1" href="https://drive.google.com/drive/folders/{fid}" target="_blank">View your gallery on Google Drive</a></div><small>MULTUREAILAB is fully open source. We <b>do not collect prompts or results</b>. Your creations don\'t belong to MULTUREAILAB. Read our <a href="https://multure.io/MULTUREAILAB#f-a-q" target="_blank">FAQ</a>.<br>Join our <a href="https://discord.gg/FsDBTE5BNx" target="_blank">Discord</a>! And if you enjoy using it, consider supporting us on <a href="https://www.patreon.com/multure" target="_blank">Patreon</a> (I\'ll never lock any feature behind a paywall though)</small></div>',
+                f'',
                 unsafe_allow_html=True,
             )
     else:
         st.write(
-            f'<div class="bottom-line"><div class="row-widget stButton"><button disabled kind="primary" class="css-1q8dd3e edgvbvh1">No gallery found. Rerun Colab and connect to Drive to save pieces in a gallery</button></div><small>We <b>do not collect prompts or results</b>. Your creations don\'t belong to MULTUREAILAB. Read our <a href="https://multure.io/MULTUREAILAB#f-a-q" target="_blank">FAQ</a>.<br>Feel free to reference #MULTUREAILAB and tag <a href="https://multure.io/multure" target="_blank">@multure</a> when sharing your creations if you wish</small></div>',
+            f'',
             unsafe_allow_html=True,
         )
         
