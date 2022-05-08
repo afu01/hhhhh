@@ -603,6 +603,7 @@ if page == "MultureLabModel1":
     if sub_model == "MultureLabModelBeta1":
         sub_model_link = f'{sub_model}'
     abstract_description = f"usually described as **Coherent** and **Structured**, it can compose images with high quality results. The selected implementation is {sub_model_link}"
+elif page == "MultureLabModel2":      
     if sub_model == "MultureLabModelBeta2":
         sub_model_link = f'{sub_model}'
     abstract_description = f"usually described as **Artistic** or **Creative**, it can compose images that are perceived as more artistic. The selected implementation is {sub_model_link}"
