@@ -647,7 +647,7 @@ col_output1, col_output2 = st.columns(2)
 
 def intermediary_frame_setup(seed):
     if intermediary_frames:
-        intermediary_folder = f"{DefaultPaths.output_path}/{sanitize_filename(user_input)} [{sub_model}] {int(seed)}_frames"
+        intermediary_folder = f"{DefaultPaths.output_path}/[{sub_model}] {int(seed)}_frames"
         if not path_exists(intermediary_folder):
             os.makedirs(intermediary_folder)
         update_every = how_many_frames
