@@ -13,7 +13,7 @@ import string
 from io import BytesIO
 from PIL import Image
 import torch
-from pathvalidate import sanitize_filename
+#from pathvalidate import sanitize_filename
 
 torch.cuda.empty_cache()
 
